@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculatort</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <!-- brand -->
+            <div class="brand">
+                <h3>simple calculator</h3>
+            </div>
+            <!--controls  -->
+            <div class="controls">
+                <label for="on">
+                    <input type="radio" name="control" id="on"checked> ON
+                </label>
+                <label for="off">
+                    <input type="radio" name="control" id="off"> OFF
+                </label>
+            </div>
+
+        </div>
+
+        <!-- screen -->
+        <div class="screen-container">
+            <input type="text" id="screen1" class="screen" value="" readonly>
+            <div id="screen2" class="screen"></div>
+        </div>
+
+        <!-- button -->
+        <div class="buttons">
+            <!-- numerals -->
+            <div class="numerals">
+                <div class="row">
+                    <button id="7" onclick="punch(7)">7</button>
+                    <button id="8"onclick="punch(8)">8</button>
+                    <button id="9"onclick="punch(9)">9</button>
+
+                </div>
+                <div class="row">
+                    <button id="4"onclick="punch(4)">4</button>
+                    <button id="5"onclick="punch(5)">5</button>
+                    <button id="6"onclick="punch(6)">6</button>
+
+                </div>
+                <div class="row">
+                    <button id="1"onclick="punch(1)">1</button>
+                    <button id="2"onclick="punch(2)">2</button>
+                    <button id="3"onclick="punch(3)">3</button>
+
+                </div>
+                <div class="row">
+                    <button id="del" onclick="del()">DEL</button>
+                    <button id="0" onclick="punch(0)">0</button>
+                    <button id="."onclick="punchdot('.')">.</button>
+
+                </div>
+            </div>
+
+            <!-- operators -->
+            <div class="operators">
+                <div class="row">
+                    <button id="clear" onclick="clear">AC</button>
+                </div>
+                <div class="row">
+                    <button id="*">*</button>
+                    <button id="/">/</button>
+                </div>
+                <div class="colrow">
+                    <div class="row">
+                        <button id="+">+</button>
+                        <button id="-">-</button>
+                    </div>
+                    <div class="row">
+                        <button id="eq">=</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+<script src="app.js"></script>
+</html>
